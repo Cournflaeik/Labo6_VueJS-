@@ -1,4 +1,6 @@
 <script setup>
+import { ref, reactive } from 'vue'
+
 let comments = reactive({ comments: []})
 let comment = ref('')
 
