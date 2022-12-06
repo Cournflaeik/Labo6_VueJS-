@@ -9,11 +9,14 @@ import Chat from './components/Chat.vue'
   <div>
     <h1>
       <img src="https://static.vecteezy.com/system/resources/previews/006/693/634/original/tik-tok-flat-icon-template-black-color-editable-tik-tok-flat-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg" alt="">
-      Tiktok Clone
+      Toktik
     </h1>
     <div class="app">
       <VideoPlayer />
-      <VideoDetails />
+      <div class="right">
+        <VideoDetails />
+        <Chat />
+      </div>
     </div>
   </div>
 </template>
@@ -22,6 +25,7 @@ import Chat from './components/Chat.vue'
   img {
     width: 3rem;
     height: 3rem;
+    rotate: 180deg;
   }
 
   h1 {
@@ -34,6 +38,9 @@ import Chat from './components/Chat.vue'
   .app {
     display: grid;
     grid-template-columns: 8fr 4fr;
+  }
+  .right {
+    padding-left: 1rem;
   }
 
 </style>
