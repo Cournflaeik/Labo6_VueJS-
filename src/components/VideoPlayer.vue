@@ -71,7 +71,7 @@
     .controlls {
         position: absolute;
         top: 40%;
-        right: 0;
+        right: 1rem;
         display: flex;
         flex-direction: column;
         color: rgb(0, 0, 0);
