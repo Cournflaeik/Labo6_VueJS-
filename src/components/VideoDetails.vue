@@ -25,7 +25,5 @@
 </template>
 
 <style scoped>
-  .details {
-    padding: 1rem;
-  }
+  
 </style>
