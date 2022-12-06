@@ -1,8 +1,16 @@
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted } from 'vue'
 
 let comments = reactive({ comments: []})
 let comment = ref('')
+
+onMounted(() => {
+  fetch("https://lab5-p379.onrender.com/api/v1/messages/")
+    .then((response) => response.json())
+    .then((data) => {
+      comments.comments = data
+    })
+})
 
 const addComment = () => {
   comments.comments.push({
