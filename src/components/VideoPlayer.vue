@@ -57,7 +57,7 @@
 <style scoped>
     video{
         max-width: 100%;
-        max-height: 100vh;
+        height: 100%;
     }
 
     .blur {
@@ -65,7 +65,6 @@
         background-size: cover;
         text-align: center;
         position: relative;
-
     }
 
     .controlls {
